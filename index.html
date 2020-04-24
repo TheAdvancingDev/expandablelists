@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Lists</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/styles.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Expandable Lists</h1>
+
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2
+                <div data-id="toggle-1" class="li-toggle" id="li-toggle-1">More >></div>
+                <ul>
+                    <li class="toggle-1" style="display: none">Nested Item 1</li>
+                    <li class="toggle-1" style="display: none">Nested Item 2</li>
+                    <li class="toggle-1" style="display: none">Nested Item 3</li>
+                </ul>
+            </li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5
+                <div data-id="toggle-2" class="li-toggle" id="li-toggle-2">More >></div>
+                <ul>
+                    <li class="toggle-2" style="display: none">Nested Item 1</li>
+                    <li class="toggle-2" style="display: none">Nested Item 2</li>
+                    <li class="toggle-2" style="display: none">Nested Item 3</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
